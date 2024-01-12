@@ -19,11 +19,12 @@ git remote add upstream https://github.com/Bulnabi-SNU/Bulnabi_PX4.git
 ```
 Bulnabi 공식 레포가 upstream으로 잘 등록되었다면, git remote -v라는 명령어를 실행하면 다음과 같이 출력될 것이다.
 
-> origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (fetch)
-> origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (push)
-> upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (fetch)
-> upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (push)
-```
+origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (fetch)  
+origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (push)  
+upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (fetch)  
+upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (push)  
+
+``` 
 6. 이제 upstream의 tag를 가져온다.
 ```
 git fetch --tags upstream
@@ -47,10 +48,10 @@ Git 관련 사항 (Conflict)등은 인터넷에서 꼭 충분히 학습을 하�
 
 
 ### 자주 쓰는 명령어
-git branch
-git checkout
-git log -5 (개수)
-git status
+git branch  
+git checkout  
+git log -5 (개수)  
+git status  
 
 
 ### 기체에 펌웨어를 업로드 하는 방법
@@ -74,12 +75,12 @@ make px4_fmu-v6x_default upload
 
 
 ## Tip
-현재 git을 처음 설치한 상태면, 현재 내가 어떤 branch에 있는지를 매번 git branch 명령어를 통해 확인해야한다. 아래 링크를 참고해서 bashrc에 추가를 하면 항상 현재 브랜치 명을 표시해줘서 편리하다.
-https://siyoon210.tistory.com/7
+현재 git을 처음 설치한 상태면, 현재 내가 어떤 branch에 있는지를 매번 git branch 명령어를 통해 확인해야한다. 아래 [링크](https://siyoon210.tistory.com/7)를 참고해서 bashrc에 추가를 하면 항상 현재 브랜치 명을 표시해줘서 편리하다.
 혹시 gedit(그냥 메모장 같은 것)이 설치되어 있지 않으면
 ```
 sudo apt install gedit
 ```
+그 다음, gedit,이나 vim 등의 에디터를 사용해 ~/.bashrc 파일을 연다.
 ```
 sudo gedit ~/.bashrc
 ```
