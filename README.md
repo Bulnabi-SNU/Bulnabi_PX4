@@ -13,6 +13,7 @@
 cd Bulnabi_PX4
 ```
 명령어를 사용해 Bulnabi_PX4 폴더 안으로 들어간다.
+
 5. 여기서 잘 연동이 되었는지 git remote -v 라는 명령어를 사용해 확인해 볼 수 있을 것이다. origin 뒤에 본인 계정의 주소가 뜰 것이다. 이제, 협업을 위해 Bulnabi-SNU/Bulnabi_PX4를 upstream으로 추가할 것이다. upstream은 불나비의 공식 PX4가 있는 곳이라고 생각하면 된다.
 ```
 git remote add upstream https://github.com/Bulnabi-SNU/Bulnabi_PX4.git
@@ -34,6 +35,7 @@ git fetch --tags upstream
 bash .Tools/setup/ubuntu.sh
 ```
 를 실행한다. 조금 시간이 걸린 뒤에 완료가 되면, ubuntu를 로그아웃했다가 다시 접속하면 된다.
+
 8. 다시 접속한 뒤에 cd Bulnabi_PX4라는 명령어를 통해 다시 Bulnabi_PX4 폴더로 들어온다. 이후, 시뮬레이션 피피티 나온 대로 잘 따라해서, 
 ```
 make px4_sitl gazebo-classic
