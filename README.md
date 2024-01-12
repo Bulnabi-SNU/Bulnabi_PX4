@@ -47,8 +47,14 @@ make px4_sitl gazebo-classic
 이제 본인 컴퓨터에서 코딩 등 작업을 마친 뒤에는 git add 어쩌구, git commit -m "어쩌구", git push origin release/1.14(또는 본인 branch 명) 등의 과정을 거쳐 본인 계정의 레포에 업로드를 하게 된다. 업로드 뒤에는 본인 레포에 들어가면 Pull-Request라는 버튼이 활성화 되는데, 이때 리뷰어를 지정해서 올리고, 리뷰어가 ok하면 본인의 작업물을 Bulnabi-SNU/Bulnabi_PX4에 merge하게 된다.
 
 Git 관련 사항 (Conflict)등은 인터넷에서 꼭 충분히 학습을 하도록 한다. 이후에는 시뮬레이션 세미나 ppt 나온 그대로 따라해보면 좋을 것 같다.
-
-
+또한, 코드를 push하기 전에
+```
+make tests
+```
+라는 명령어를 실행해, 모든 test를 통과하는지 확인을 하도록 한다.
+```
+100% tests passed, 0 tests failed out of 139
+```
 ### 자주 쓰는 명령어
 git branch  
 git checkout  
