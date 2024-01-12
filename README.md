@@ -18,11 +18,11 @@ cd Bulnabi_PX4
 git remote add upstream https://github.com/Bulnabi-SNU/Bulnabi_PX4.git
 ```
 Bulnabi 공식 레포가 upstream으로 잘 등록되었다면, git remote -v라는 명령어를 실행하면 다음과 같이 출력될 것이다.
-```
-origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (fetch)
-origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (push)
-upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (fetch)
-upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (push)
+
+> origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (fetch)
+> origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (push)
+> upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (fetch)
+> upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (push)
 ```
 6. 이제 upstream의 tag를 가져온다.
 ```
