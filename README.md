@@ -55,12 +55,13 @@ make tests
 ```
 100% tests passed, 0 tests failed out of 139
 ```
-### 자주 쓰는 명령어
-git branch  
-git checkout  
+### 자주 쓰는 Git 명령어 및 각자 검색해서 공부해야 할 명령어
+git branch  (현재 branch 알려줌)
+git checkout  (다른 branch로 이동함)
 git log -5 (개수)  
 git status  
-
+git pull과 git fetch, merge의 차이
+git conflict을 해결하는 방법 (원격 저장소의 내용과 내 컴퓨터 작업물이 다르다면? 어떻게 해결하는지?)
 
 ### 기체에 펌웨어를 업로드 하는 방법
 px4를 직접 건드리는 팀이 아니라도, 기체에 펌웨어를 업로드 하는 부분은 알고 있어야 한다. 위의 과정을 따라 Bulnabi_PX4를 설치했다면, 그것을 픽스호크 위에 올린 뒤에 본인들의 작업물(Companion computer활용한 부분 포함)과 충돌이 일어나지는 않는지 확인해야 한다.
@@ -84,6 +85,14 @@ make px4_fmu-v6x_default upload
 
 
 ## Tip
+
+#### 유용한 단축키 및 명령어
+
+- 터미널에 복사 및 붙여넣기를 할 때는 단순히 ctrl+C,V 키가 먹히지 않는다. 리눅스 터미널에서는 ctrl+shift + C, V 명령어를 사용해 복사 붙여넣기를 진행해야 한다.
+- Terminal 대신 terminator 라는 프로그램(?)을 활용하면 더욱 편리하다. 설치는 sudo apt install terminator를 통해 진행한다.
+terminator 창에서 ctrl+shift+E 를 하면 좌우 분할이 되고, ctrl+shift+O 를 하면 상하 분할이 된다.
+
+#### Git 현재 branch 이름 표시하는 방법
 현재 git을 처음 설치한 상태면, 현재 내가 어떤 branch에 있는지를 매번 git branch 명령어를 통해 확인해야한다. 아래 [링크](https://siyoon210.tistory.com/7)를 참고해서 bashrc에 추가를 하면 항상 현재 브랜치 명을 표시해줘서 편리하다.
 혹시 gedit(그냥 메모장 같은 것)이 설치되어 있지 않으면
 ```
@@ -101,6 +110,7 @@ parse_git_branch() {
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 ```
 터미널을 재시작하고, git이 연동되어 있는 폴더에 들어가면 자동으로 현재 브랜치 명을 표시해줄 것이다.
+
 # PX4 Drone Autopilot
 
 [![Releases](https://img.shields.io/github/release/PX4/PX4-Autopilot.svg)](https://github.com/PX4/PX4-Autopilot/releases) [![DOI](https://zenodo.org/badge/22634/PX4/PX4-Autopilot.svg)](https://zenodo.org/badge/latestdoi/22634/PX4/PX4-Autopilot)
