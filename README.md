@@ -76,7 +76,7 @@ cd Bulnabi_PX4
 ```
 make px4_fmu-v6x_default
 ```
-build가 완료되면,
+build가 완료되면, 다음 명령어를 통해 upload 진행.
 ```
 make px4_fmu-v6x_default upload
 ```
