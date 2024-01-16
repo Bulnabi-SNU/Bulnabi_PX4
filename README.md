@@ -18,7 +18,11 @@ cd Bulnabi_PX4
 ```
 git remote add upstream https://github.com/Bulnabi-SNU/Bulnabi_PX4.git
 ```
-Bulnabi 공식 레포가 upstream으로 잘 등록되었다면, git remote -v라는 명령어를 실행하면 다음과 같이 출력될 것이다.
+Bulnabi 공식 레포가 upstream으로 잘 등록되었다면, 
+```
+git remote -v
+```
+라는 명령어를 실행하면 다음과 같이 출력될 것이다.
 ```
 origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (fetch)  
 origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (push)  
@@ -32,7 +36,7 @@ git fetch --tags upstream
 ```
 7. 여기까지 잘 따라왔다면, 현재 있는 폴더 (Bulnabi_PX4)에서
 ```
-bash .Tools/setup/ubuntu.sh
+bash ./Tools/setup/ubuntu.sh
 ```
 를 실행한다. 조금 시간이 걸린 뒤에 완료가 되면, ubuntu를 로그아웃했다가 다시 접속하면 된다.
 
