@@ -1,14 +1,14 @@
 # 불나비 PX4
 본 레포는 불나비의 PX4 개발을 위해 제작되었으며, PX4-AutoPilot의 v1.14.0 버전을 그대로 가져온 것이다. PX4 코드를 직접 변형할 예정이라면 아래 가이드라인을 꼭 따라야 한다.
 #### 개발 환경
-> 1.Ubuntu 20.04  
+> 1.Ubuntu 20.04
 > 2. ROS2 foxy
 ## 기본 설치 가이드라인
 사용을 위해서는, 다음 과정을 거친다.
 1. 현재 있는 Bulnabi-SNU repository를 fork 버튼을 이용해 본인 계정으로 fork한다.
 2. 본인 계정 repository로 fork를 했다면, 본인의 local computer 디렉토리에서 git clone https://github.com/본인이름!!!/Bulnabi_PX4.git 명령어를 활용해 본인의 local computer로 clone한다. (초록 Code 라는 버튼 누르면 https 주소가 나옴)
 3. clone을 했다면 본인 컴퓨터 폴더에 Bulnabi_PX4라는 폴더가 생성되었을 것이다.
-4. 
+4.
 ```
 cd Bulnabi_PX4
 ```
@@ -18,16 +18,16 @@ cd Bulnabi_PX4
 ```
 git remote add upstream https://github.com/Bulnabi-SNU/Bulnabi_PX4.git
 ```
-Bulnabi 공식 레포가 upstream으로 잘 등록되었다면, 
+Bulnabi 공식 레포가 upstream으로 잘 등록되었다면,
 ```
 git remote -v
 ```
 라는 명령어를 실행하면 다음과 같이 출력될 것이다.
 ```
-origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (fetch)  
-origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (push)  
-upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (fetch)  
-upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (push)  
+origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (fetch)
+origin	https://github.com/jangminhyuk/Bulnabi_PX4.git (push)
+upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (fetch)
+upstream	https://github.com/Bulnabi-SNU/Bulnabi_PX4.git (push)
 ```
 
 6. 이제 upstream의 tag를 가져온다.
@@ -40,7 +40,7 @@ bash ./Tools/setup/ubuntu.sh
 ```
 를 실행한다. 조금 시간이 걸린 뒤에 완료가 되면, ubuntu를 로그아웃했다가 다시 접속하면 된다.
 
-8. 다시 접속한 뒤에 cd Bulnabi_PX4라는 명령어를 통해 다시 Bulnabi_PX4 폴더로 들어온다. 이후, 시뮬레이션 피피티 나온 대로 잘 따라해서, 
+8. 다시 접속한 뒤에 cd Bulnabi_PX4라는 명령어를 통해 다시 Bulnabi_PX4 폴더로 들어온다. 이후, 시뮬레이션 피피티 나온 대로 잘 따라해서,
 ```
 make px4_sitl gazebo-classic
 ```
@@ -62,8 +62,8 @@ make tests
 ### 자주 쓰는 Git 명령어 및 각자 검색해서 공부해야 할 명령어
 git branch  (현재 branch 알려줌)
 git checkout  (다른 branch로 이동함)
-git log -5 (최근 5개 커밋을 보여줌)  
-git status  
+git log -5 (최근 5개 커밋을 보여줌)
+git status
 git pull과 git fetch, merge의 차이
 git conflict을 해결하는 방법 (원격 저장소의 내용과 내 컴퓨터 작업물이 다르다면? 어떻게 해결하는지?)
 
@@ -114,6 +114,10 @@ parse_git_branch() {
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 ```
 터미널을 재시작하고, git이 연동되어 있는 폴더에 들어가면 자동으로 현재 브랜치 명을 표시해줄 것이다.
+
+### Review
+
+Very good!
 
 # PX4 Drone Autopilot
 
